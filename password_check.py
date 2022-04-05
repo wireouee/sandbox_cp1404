@@ -1,4 +1,6 @@
 """
+Description: A simple Password Checker
+
 Name: Deqian He
 """
 
@@ -7,6 +9,7 @@ maximum_length = 6
 
 
 def main():
+    """Check whether a given text has the correct password format"""
     menu = "Please enter a valid password\n" \
            "Your password must be between {} and {} characters, and contain:\n" \
            "\t1 or more uppercase characters\n" \
