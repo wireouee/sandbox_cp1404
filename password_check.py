@@ -9,7 +9,6 @@ maximum_length = 6
 
 
 def main():
-    """Check whether a given text has the correct password format"""
     menu = "Please enter a valid password\n" \
            "Your password must be between {} and {} characters, and contain:\n" \
            "\t1 or more uppercase characters\n" \
@@ -18,6 +17,7 @@ def main():
     print(menu.format(minimum_length, maximum_length))
     password = input(">")
 
+    """Check whether a given text has the correct password format"""
     while not length_point(password) or not character_point(password):
         print("Invalid password!")
         password = input("> ")
